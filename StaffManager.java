@@ -5,11 +5,11 @@ public class StaffManager {
 
     private static final String URL = "jdbc:mysql://localhost:3306/company";
     private static final String USER = "root";
-    private static final String PASSWORD = "Khushi@25";//🔐 Change if needed
+    private static final String PASSWORD = "Khushi@25";
 
     public static void main(String[] args) {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver"); // Load MySQL driver
+            Class.forName("com.mysql.cj.jdbc.Driver"); 
         } catch (Exception e) {
             System.out.println("Driver error: " + e.getMessage());
         }
@@ -36,7 +36,7 @@ public class StaffManager {
                     active = false;
                     System.out.println("Program ended.");
                 }
-                default -> System.out.println("❌ Invalid option. Try again.");
+                default -> System.out.println(" Invalid option. Try again.");
             }
         }
         input.close();
